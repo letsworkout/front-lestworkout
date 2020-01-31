@@ -1,4 +1,4 @@
-import gql from 'graphql-tag';
+import gql from "graphql-tag";
 
 /* eslint-disable */
 export const SIGNUP_MUTATION = gql`
@@ -8,6 +8,16 @@ export const SIGNUP_MUTATION = gql`
     $password: String!
   ) {
     createUser(username: $username, email: $email, password: $password) {
+      id
+      username
+      email
+    }
+  }
+`;
+
+export const SIGNIN_MUTATION = gql`
+  mutation SigninMutation($email: String!, $password: String!) {
+    signIn(email: $email, password: $password) {
       id
       username
       email
