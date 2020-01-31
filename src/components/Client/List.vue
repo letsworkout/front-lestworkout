@@ -33,6 +33,7 @@
   </section>
 </template>
 
+
 <script>
 import Menu from "@/components/Commom/Menu";
 import { CLIENT_LIST_QUERY } from "../../gql/client";
