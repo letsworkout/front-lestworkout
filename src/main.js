@@ -6,6 +6,8 @@ import VueApollo from "vue-apollo";
 import App from "./App.vue";
 import router from "./router";
 
+Vue.config.productionTip = false;
+
 const httpLink = new HttpLink({
   // URL to graphql server, you should use an absolute URL here
   uri: "http://localhost:1337/graphql"

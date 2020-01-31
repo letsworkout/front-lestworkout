@@ -7,6 +7,7 @@
                     <router-link class="navbar-item" to="/">Lets Workout</router-link>
                     <router-link class="navbar-item" to="/signup">Sign up</router-link>
                     <router-link class="navbar-item" to="/signin">Sign in</router-link>
+                    <router-link class="navbar-item" to="/client/list">Clients</router-link>
                     <button class="button navbar-burger">    
                         <span></span>
                         <span></span>
