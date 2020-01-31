@@ -1,6 +1,5 @@
 import gql from "graphql-tag";
 
-/* eslint-disable */
 export const CLIENT_LIST_QUERY = gql`
   query {
     teachers {
@@ -12,6 +11,7 @@ export const CLIENT_LIST_QUERY = gql`
       clients {
         profile {
           name
+          email
           password
         }
       }
